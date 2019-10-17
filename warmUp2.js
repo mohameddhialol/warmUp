@@ -3,6 +3,7 @@
 //you can only add one at each summetion, you'll need to use recursion in this.
 var aux = 0
 function gcd(a,b){
+	var aux = 0
 	if(a<0 || b<0 ){
 		return "please enter 2 positive numbers."
 	}

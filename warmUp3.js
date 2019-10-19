@@ -4,6 +4,7 @@
 // -name of your class instructors 
 var class['Insaf,Ons,Ruba,Foz','Dhia,Omar,Amine,Taha','Seif,Youssef,Tamara,Matt']
 // 2-write a function that takes an array as an argument and returns the element that is located in the middle of that array.
+<<<<<<< HEAD
 function middle(arr){
 	if (arr.length % 2 === 1){      //in case the array is composed of an odd number of elements.
 		return "the middle element is " + arr[((arr.length + 1) / 2) - 1];
@@ -18,3 +19,7 @@ function multiAll(arr){
 	}
 	return arr;
 }
+=======
+
+// 3-Change all the numbers in the array to be multiplied by two for even indexes.
+>>>>>>> 5351c491bef905428a1af3ea57f32fb6874d8e38

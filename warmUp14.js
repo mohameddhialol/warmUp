@@ -34,3 +34,23 @@ var maxProfit = function(prices) {
 	}
 	return max - min; // 6 - 1 = 5
 };
+
+var maxProfit = function (prices){ // with recurcion or whatever it's called 
+	var profit = 0 ;
+	function findProfit (arr,i) {
+		if (arr.length === 0){ //my stop condition 
+			return Math.abs(profit); // all the numbers are negative and i dnt want to see -0;
+		}
+
+		if(arr[0]-arr[i] < profit){ //we compare all the possible profits and find the lowest bc again everything is negative so it can work on big numbers
+			profit = arr[0]-arr[i] 
+		}
+
+		if(i === arr.length){  //when it finishies comparing all the possible profits of the first element it moves to the next one
+			return findProfit(arr.slice(1),1)
+		}
+
+		return findProfit(arr,i+1) // this is for making sure it iterates over all of them 
+	}
+	return findProfit(prices,1)  
+}

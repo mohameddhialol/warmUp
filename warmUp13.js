@@ -59,7 +59,7 @@ function toCamelCase(str) {
 	// 	element[0] = element[0].toUpperCase()
 	// 	element.join('')
 	// })
-	for(var i = 0; i < str.string; i++){
+	for(var i = 0; i < str.length ; i++){
 		str[i] = str[i].split('')
 		str[i][0] = str[i][0].toUpperCase()
 		str[i].join('')

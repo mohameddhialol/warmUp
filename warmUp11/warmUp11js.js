@@ -1,11 +1,14 @@
 
-$('#left').on('click',function(){
-	var $element = ('<li></li>')
-	$( "<li></li>" ).appendTo( ".left" );
-})
+
+	$('#left').on('click',function(){
+		$('.choose').on('click', function(){
+			$( ".left" ).append( "<li></li>" );
+		})
+	})
+	$('#right').on('click',function(){
+		$('.choose').on('click', function(){
+			$( ".right" ).append( "<li></li>" );
+		})
+	})
 
 
-$('#right').on('click',function(){
-	var $element = ('<li></li>')
-	$( "<li></li>" ).appendTo( ".right" );
-})

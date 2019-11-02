@@ -1,3 +1,4 @@
-#list{
-	columns: 2;
+ul {
+	float: left;
+	width: 100px;
 }

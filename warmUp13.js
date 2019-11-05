@@ -54,7 +54,7 @@ function toCamelCase(str) {
 		i++
 	}
 	str = str.split(spliter)
-	// str.map(function(element){  tried to do it with map but didnt work .. i'll make tho 
+	// str.map(function(element){    >>tried to do it with map but didnt work .. i'll make tho 
 	// 	element = element.split('')
 	// 	element[0] = element[0].toUpperCase()
 	// 	element.join('')
@@ -67,3 +67,22 @@ function toCamelCase(str) {
 	str = str.join('')
 	return str
 } 
+
+//3
+function filter_list(arr) { //simple minded way
+	var acc = [];
+	for (var i = 0; i < arr.length; i++){
+		if(arr[i] % 2 === 1 ||arr[i] % 2 === 0){
+			acc.push(arr[i])
+		}
+	}
+	return acc;
+}
+
+function filter_list(arr) {
+	return arr.filter(function(element){
+		if(typeof(element) === 'number'){
+			return element;
+		}
+	})
+}
